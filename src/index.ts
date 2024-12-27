@@ -116,3 +116,5 @@ function main(
 }
 
 export { main as ChartPng }
+
+export type { ChartConfiguration }
