@@ -1,0 +1,58 @@
+{
+	"name": "chart-png",
+	"type": "module",
+	"version": "0.0.1",
+	"description": "🏭 A simple Chart.js to Png image converter based on node-canvas / 一个基于 node-canvas 的 Chart.js -> png 转换器",
+	"author": "Xat <i@xat.sh> (https://xat.sh)",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Xatsh/Chart-Png.git"
+	},
+	"keywords": [
+		"chart",
+		"chart.js",
+		"image",
+		"png",
+		"node-canvas",
+		"canvas",
+		"convert",
+		"converter"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"release": "bumpp && npm publish",
+		"build": "tsup --format esm,cjs --clean --dts",
+		"prepare": "pnpm run build",
+		"type:check": "tsc --noEmit",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix ."
+	},
+	"dependencies": {
+		"canvas": "^3.0.0",
+		"chart.js": "^3.9.1",
+		"chartjs-plugin-annotation": "^2.2.1",
+		"chartjs-plugin-autocolors": "^0.3.1",
+		"chartjs-plugin-datalabels": "^2.2.0",
+		"chartjs-plugin-gradient": "^0.6.1",
+		"chartjs-plugin-trendline": "^2.1.6"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.2",
+		"@xats/eslint-config": "^1.2.11",
+		"bumpp": "^9.9.2",
+		"eslint": "^9.17.0",
+		"tsup": "^8.3.5",
+		"typescript": "^5.7.2"
+	}
+}
