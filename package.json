@@ -1,7 +1,7 @@
 {
 	"name": "chart-png",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "🏭 A simple Chart.js to Png image converter based on node-canvas / 一个基于 node-canvas 的 Chart.js -> png 转换器",
 	"author": "Xat <i@xat.sh> (https://xat.sh)",
 	"license": "MIT",
