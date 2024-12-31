@@ -1,4 +1,6 @@
-import type { ChartConfiguration, ChartItem } from "chart.js/auto"
+import type { ChartItem } from "chart.js/auto"
+
+import type { Config } from "@/types/config"
 
 import fs from "node:fs"
 import path from "node:path"
@@ -7,8 +9,6 @@ import { createCanvas, registerFont } from "canvas"
 import { Chart } from "chart.js/auto"
 
 import { factory } from "@/utils/factory"
-
-type Config = ChartConfiguration
 
 interface MainOptions {
 	/**
@@ -118,5 +118,3 @@ function main(
 }
 
 export { main as ChartPng }
-
-export type { Config }

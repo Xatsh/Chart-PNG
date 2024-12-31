@@ -1,18 +1,13 @@
 import type { Buffer } from "node:buffer"
 
 import type { Canvas } from "canvas"
-import type { ChartConfiguration, ChartItem } from "chart.js/auto"
+import type { ChartItem } from "chart.js/auto"
+
+import type { Config } from "@/types/config"
 
 import { Chart } from "chart.js/auto"
-import Annotation from "chartjs-plugin-annotation"
-import Autocolors from "chartjs-plugin-autocolors"
-import Datalabels from "chartjs-plugin-datalabels"
-import Gradient from "chartjs-plugin-gradient"
-import Trendline from "chartjs-plugin-trendline"
 
 import { Background } from "@/utils/background"
-
-Chart.register(Annotation, Autocolors, Datalabels, Gradient, Trendline)
 
 interface FactoryOptions {
 	/**
@@ -22,7 +17,7 @@ interface FactoryOptions {
 	/**
 	 * The chart configuration of Chart.js
 	 */
-	configuration: ChartConfiguration
+	configuration: Config
 	/**
 	 * The context of the canvas
 	 */

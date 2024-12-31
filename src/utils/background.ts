@@ -1,4 +1,4 @@
-import type { Chart, Plugin } from "chart.js"
+import type { Chart, Plugin } from "chart.js/auto"
 
 export function Background({
 	fillStyle,
