@@ -1,6 +1,4 @@
-import type { ChartItem } from "chart.js/auto"
-
-import type { Config } from "@/utils/config"
+import type { ChartConfiguration, ChartItem } from "chart.js/auto"
 
 import fs from "node:fs"
 import path from "node:path"
@@ -9,6 +7,8 @@ import { createCanvas, registerFont } from "canvas"
 import { Chart } from "chart.js/auto"
 
 import { factory } from "@/utils/factory"
+
+import "@/utils/plugins"
 
 interface MainOptions {
 	/**
@@ -58,10 +58,10 @@ interface MainOptions {
 function main(
 	/**
 	 * The chart configuration of Chart.js v3.
-	 * @type {Config}
+	 * @type {ChartConfiguration}
 	 * @see https://www.chartjs.org/docs/3.9.1/configuration/
 	 */
-	config: Config,
+	config: ChartConfiguration,
 	/**
 	 * The name of the chart to render.
 	 * @type {string}
@@ -117,4 +117,4 @@ function main(
 	}))
 }
 
-export { main as ChartPng }
+export { ChartConfiguration, main as ChartPng }
