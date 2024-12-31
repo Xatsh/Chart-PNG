@@ -1,4 +1,4 @@
-import type { ChartConfiguration, ChartData, ChartType, DefaultDataPoint } from "chart.js"
+import type { ChartConfiguration, ChartDataset, ChartType, DefaultDataPoint } from "chart.js"
 import type { AnnotationPluginOptions as AnnotationOptions } from "chartjs-plugin-annotation"
 import type { AutocolorsOptions } from "chartjs-plugin-autocolors"
 import type { Options as DatalabelsOptions } from "chartjs-plugin-datalabels/types/options"
