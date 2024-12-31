@@ -109,10 +109,10 @@ ChartPng(config, "chart.png", "output")
 ChartPng(
  /**
   * The chart configuration of Chart.js v3.
-  * @type {ChartConfiguration}
+  * @type {Config}
   * @see https://www.chartjs.org/docs/3.9.1/configuration/
   */
- config: ChartConfiguration,
+ config: Config,
  /**
   * The name of the chart to render.
   * @type {string}
