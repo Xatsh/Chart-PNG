@@ -1,4 +1,4 @@
-import type { ChartConfiguration, ChartItem } from "chart.js/auto"
+import type { ChartConfiguration, ChartItem, ChartTypeRegistry } from "chart.js/auto"
 
 import fs from "node:fs"
 import path from "node:path"
@@ -9,6 +9,8 @@ import { Chart } from "chart.js/auto"
 import { factory } from "@/utils/factory"
 
 import "@/utils/plugins"
+
+type Config<TType extends keyof ChartTypeRegistry = keyof ChartTypeRegistry> = ChartConfiguration<TType>
 
 interface MainOptions {
 	/**
@@ -58,10 +60,10 @@ interface MainOptions {
 function main(
 	/**
 	 * The chart configuration of Chart.js v3.
-	 * @type {ChartConfiguration}
+	 * @type {Config}
 	 * @see https://www.chartjs.org/docs/3.9.1/configuration/
 	 */
-	config: ChartConfiguration,
+	config: Config,
 	/**
 	 * The name of the chart to render.
 	 * @type {string}
@@ -117,4 +119,4 @@ function main(
 	}))
 }
 
-export { ChartConfiguration, main as ChartPng }
+export { main as ChartPng, Config }
