@@ -13,7 +13,6 @@ This is a simple lib that converts a Chart.js v3(.9.1)'s configuration to a png 
   - [chartjs-plugin-annotation](https://github.com/chartjs/chartjs-plugin-annotation)
   - [chartjs-plugin-autocolors](https://github.com/kurkle/chartjs-plugin-autocolors)
   - [chartjs-plugin-gradient](https://github.com/kurkle/chartjs-plugin-gradient)
-  - [chartjs-plugin-trendline](https://github.com/Makanz/chartjs-plugin-trendline)
   - And [inline plugins](https://www.chartjs.org/docs/3.9.1/developers/plugins.html#using-plugins)
 
 ## Installation

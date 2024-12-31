@@ -26,9 +26,6 @@ importers:
       chartjs-plugin-gradient:
         specifier: ^0.6.1
         version: 0.6.1(chart.js@3.9.1)
-      chartjs-plugin-trendline:
-        specifier: ^2.1.6
-        version: 2.1.6
     devDependencies:
       '@types/node':
         specifier: ^22.10.2
@@ -871,9 +868,6 @@ packages:
     resolution: {integrity: sha512-TGHNIh8KqQMLdb+UfY80cBHYRyOC47eeokmgkeajRdKGbFt462lJiyiq4ZJ25fiM7BGsmzoBLhmVyEw4B3gQxw==}
     peerDependencies:
       chart.js: '>=2.6.0'
-
-  chartjs-plugin-trendline@2.1.6:
-    resolution: {integrity: sha512-73lpSv87RcIeu0so4ndEE48Xf08Q4scz079tSgYdfeGuIce4JKcSE64oluhz/j6NpBr50Z7PPwolGJ0cLtknRw==}
 
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
@@ -3161,8 +3155,6 @@ snapshots:
   chartjs-plugin-gradient@0.6.1(chart.js@3.9.1):
     dependencies:
       chart.js: 3.9.1
-
-  chartjs-plugin-trendline@2.1.6: {}
 
   chokidar@3.6.0:
     dependencies:

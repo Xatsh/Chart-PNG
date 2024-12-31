@@ -3,8 +3,6 @@ import type { Buffer } from "node:buffer"
 import type { Canvas } from "canvas"
 import type { ChartItem } from "chart.js/auto"
 
-import type { Config } from "@/utils/plugins"
-
 import { Chart } from "chart.js/auto"
 
 import { Background } from "@/utils/background"

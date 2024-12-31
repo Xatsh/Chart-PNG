@@ -1,4 +1,6 @@
-import type { ChartConfiguration, ChartItem, ChartTypeRegistry } from "chart.js/auto"
+import type { ChartItem } from "chart.js/auto"
+
+import type { Config } from "@/types/config"
 
 import fs from "node:fs"
 import path from "node:path"
@@ -7,10 +9,6 @@ import { createCanvas, registerFont } from "canvas"
 import { Chart } from "chart.js/auto"
 
 import { factory } from "@/utils/factory"
-
-import "@/utils/plugins"
-
-type Config<TType extends keyof ChartTypeRegistry = keyof ChartTypeRegistry> = ChartConfiguration<TType>
 
 interface MainOptions {
 	/**
