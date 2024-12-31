@@ -6,10 +6,10 @@ import type { Options as GradientOptions } from "chartjs-plugin-gradient/types/o
 
 export type Config<TType extends ChartType = ChartType, TData = DefaultDataPoint<TType>, TLabel = unknown> = ChartConfiguration<TType, TData, TLabel> & {
 	data: ChartConfiguration<TType, TData, TLabel>["data"] & {
-		datasets: ChartConfiguration<TType, TData, TLabel>["data"]["datasets"] & {
+		datasets: Array<ChartDataset<TType, TData> & {
 			dataLabels?: DatalabelsOptions
 			gradient?: GradientOptions
-		}
+		}>
 	}
 	options?: ChartConfiguration<TType, TData, TLabel>["options"] & {
 		plugins?: {
