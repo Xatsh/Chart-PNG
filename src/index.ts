@@ -8,6 +8,8 @@ import { Chart } from "chart.js/auto"
 
 import { factory } from "@/utils/factory"
 
+type Config = ChartConfiguration
+
 interface MainOptions {
 	/**
 	 * Optional background color for the chart, otherwise it will be white.
@@ -56,10 +58,10 @@ interface MainOptions {
 function main(
 	/**
 	 * The chart configuration of Chart.js v3.
-	 * @type {ChartConfiguration}
+	 * @type {Config}
 	 * @see https://www.chartjs.org/docs/3.9.1/configuration/
 	 */
-	config: ChartConfiguration,
+	config: Config,
 	/**
 	 * The name of the chart to render.
 	 * @type {string}
@@ -117,4 +119,4 @@ function main(
 
 export { main as ChartPng }
 
-export type { ChartConfiguration }
+export type { Config }
