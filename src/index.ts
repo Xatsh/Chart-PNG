@@ -1,6 +1,6 @@
 import type { ChartItem } from "chart.js/auto"
 
-import type { Config } from "@/types/config"
+import type { Config } from "@/utils/config"
 
 import fs from "node:fs"
 import path from "node:path"

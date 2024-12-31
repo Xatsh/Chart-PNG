@@ -3,7 +3,7 @@ import type { Buffer } from "node:buffer"
 import type { Canvas } from "canvas"
 import type { ChartItem } from "chart.js/auto"
 
-import type { Config } from "@/types/config"
+import type { Config } from "@/utils/config"
 
 import { Chart } from "chart.js/auto"
 
