@@ -7,7 +7,6 @@ import type { Config } from "@/types/config"
 
 import { Chart } from "chart.js/auto"
 import Annotation from "chartjs-plugin-annotation"
-import Autocolors from "chartjs-plugin-autocolors"
 import Datalabels from "chartjs-plugin-datalabels"
 
 import { Background } from "@/utils/background"
@@ -42,7 +41,8 @@ export function factory({
 	height,
 	width,
 }: FactoryOptions): Buffer {
-	Chart.register(Annotation, Autocolors, Datalabels)
+	Chart.register(Annotation)
+	Chart.register(Datalabels)
 	// Add the Background plugin to the chart
 	Chart.register(Background({ fillStyle: backgroundColor, height, width }))
 
